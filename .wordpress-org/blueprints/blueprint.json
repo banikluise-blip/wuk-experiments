@@ -23,7 +23,9 @@
         "timezone_string": "Europe/Berlin",
         "date_format": "d. F Y",
         "time_format": "H:i",
-        "start_of_week": "1"
+        "start_of_week": "1",
+        "show_on_front": "page",
+        "page_on_front": "6"
       }
     },
     {
