@@ -1,7 +1,7 @@
 {
   "$schema": "https://playground.wordpress.net/blueprint-schema.json",
   "preferredVersions": {
-    "php": "8.2",
+    "php": "8.4",
     "wp": "latest"
   },
   "features": {
@@ -25,7 +25,9 @@
         "time_format": "H:i",
         "start_of_week": "1",
         "show_on_front": "page",
-        "page_on_front": "6"
+        "page_on_front": "6",
+        "whl_page": "toreinfahrt",
+        "whl_redirect_admin": "du-bloeder-pups"
       }
     },
     {
@@ -99,6 +101,16 @@
             "resource": "url",
             "url": "https://raw.githubusercontent.com/carstingaxion/wuk-experiments/refs/heads/main/wp-content/wuk-experiments-main/export.xml"
         }
+    },
+    {
+      "step": "installPlugin",
+      "pluginData": {
+        "resource": "wordpress.org/plugins",
+        "slug": "wps-hide-login"
+      },
+      "options": {
+        "activate": true
+      }
     }
   ]
 }
